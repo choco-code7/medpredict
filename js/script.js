@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", function () {
   mainNav.addEventListener("click", function (event) {
     if (event.target.classList.contains("main-nav-link")) {
       // Prevent default action of link when clicked
-      event.preventDefault();
+      // event.preventDefault();
       toggleNavOpen();
     }
   });
@@ -135,36 +135,36 @@ faqs.forEach((faq) => {
 ///////////////////////////////////////////////////////////
 // Smooth scrolling animation
 
-const allLinks = document.querySelectorAll("a:link");
+// const allLinks = document.querySelectorAll("a:link");
 
-allLinks.forEach(function (link) {
-  // Exclude links with class "btn--full" or href "doc.html"
-  if (
-    !link.classList.contains("btn--full") &&
-    link.getAttribute("href") !== "doc.html"
-  ) {
-    link.addEventListener("click", function (e) {
-      e.preventDefault();
-      const href = link.getAttribute("href");
+// allLinks.forEach(function (link) {
+//   // Exclude links with class "btn--full" or href "doc.html"
+//   if (
+//     !link.classList.contains("btn--full") &&
+//     link.getAttribute("href") !== "doc.html"
+//   ) {
+//     link.addEventListener("click", function (e) {
+//       e.preventDefault();
+//       const href = link.getAttribute("href");
 
-      // Scroll back to top
-      if (href === "#") {
-        window.scrollTo({
-          top: 0,
-          behavior: "smooth",
-        });
-      }
+//       // Scroll back to top
+//       if (href === "#") {
+//         window.scrollTo({
+//           top: 0,
+//           behavior: "smooth",
+//         });
+//       }
 
-      // Scroll to other links
-      if (href !== "#" && href.startsWith("#")) {
-        const sectionEl = document.querySelector(href);
-        sectionEl.scrollIntoView({ behavior: "smooth" });
-      }
+//       // Scroll to other links
+//       if (href !== "#" && href.startsWith("#")) {
+//         const sectionEl = document.querySelector(href);
+//         sectionEl.scrollIntoView({ behavior: "smooth" });
+//       }
 
-      // Close mobile navigation
-      if (link.classList.contains("main-nav-link")) {
-        headerEl.classList.toggle("nav-open");
-      }
-    });
-  }
-});
+//       // Close mobile navigation
+//       if (link.classList.contains("main-nav-link")) {
+//         headerEl.classList.toggle("nav-open");
+//       }
+//     });
+//   }
+// });
