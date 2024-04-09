@@ -1,0 +1,46 @@
+    <h1>Diabetes Dataset Documentation</h1>
+
+    <h2>Overview:</h2>
+
+    <p>The "diabetes" dataset contains clinical measurements and other attributes for 768 patients, with the aim of predicting whether a patient has diabetes (the 'Outcome' variable). These attributes include information such as the number of pregnancies, glucose level, blood pressure, skin thickness, insulin level, BMI (Body Mass Index), diabetes pedigree function, and age.</p>
+
+    <h2>Dataset Information:</h2>
+
+    <ul>
+        <li><strong>Dataset Name:</strong> Diabetes Dataset</li>
+        <li><strong>Source:</strong> UCI Machine Learning Repository</li>
+        <li><strong>Number of Instances:</strong> 768</li>
+        <li><strong>Number of Features:</strong> 9</li>
+    </ul>
+
+    <h2>Features:</h2>
+
+    <p>The dataset contains the following features:</p>
+
+    <ol>
+        <li><strong>Pregnancies:</strong> Number of times pregnant.</li>
+        <li><strong>Glucose:</strong> Plasma glucose concentration after 2 hours in an oral glucose tolerance test.</li>
+        <li><strong>BloodPressure:</strong> Diastolic blood pressure (mm Hg).</li>
+        <li><strong>SkinThickness:</strong> Triceps skin fold thickness (mm).</li>
+        <li><strong>Insulin:</strong> 2-Hour serum insulin (mu U/ml).</li>
+        <li><strong>BMI:</strong> Body Mass Index (weight in kg/(height in m)^2).</li>
+        <li><strong>DiabetesPedigreeFunction:</strong> Diabetes pedigree function (a function which scores likelihood of diabetes based on family history).</li>
+        <li><strong>Age:</strong> Age of the patient (years).</li>
+        <li><strong>Outcome:</strong> Binary indicator of diabetes status. '0' indicates no diabetes, while '1' indicates the presence of diabetes.</li>
+    </ol>
+
+    <h2>Potential Use Cases:</h2>
+
+    <ol>
+        <li>Development of predictive models to identify individuals at risk of developing diabetes based on their clinical measurements and attributes.</li>
+        <li>Analysis of the relationships between different risk factors and the likelihood of diabetes.</li>
+        <li>Exploration of feature importance and identification of key predictors for diabetes diagnosis.</li>
+    </ol>
+
+    <h2>Availability:</h2>
+
+    <p>The "diabetes" dataset is publicly available and can be accessed from the UCI Machine Learning Repository.</p>
+
+    <h2>Citation:</h2>
+
+    <p>Dua, D. and Graff, C. (2019). UCI Machine Learning Repository [http://archive.ics.uci.edu/ml]. Irvine, CA: University of California, School of Information and Computer Science.</p>

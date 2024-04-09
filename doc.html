@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/doc.css" />
+  <link rel="stylesheet" href="css/general.css" />
+
+  <!-- EXTRA LINKS -->
+  <script
+    type="module"
+    src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"
+  ></script>
+
+  <!-- JS -->
+  <script src="js/side-nav.js"></script>
+  <script src="js/doc.js"></script>
+
+  <!-- FONTS -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MedPredict &mdash; Documentation</title>
+  </head>
+  <body>
+    <header class="header">
+      <a href="index.html">
+        <img class="logo" alt="MedPredict logo" src="img/Med-logoooo.png" />
+      </a>
+      <nav class="main-nav ">
+        <ul class="main-nav-list tab-container">
+          <li>
+            <button
+              class="main-nav-link tablinks"
+              onclick="openTab(event, 'overview')"
+              id="defaultOpen"
+            >
+              Overview
+            </button>
+          </li>
+          <li>
+            <button
+              class="main-nav-link tablinks"
+              onclick="openTab(event, 'heart')"
+            >
+              Heart disease dataset
+            </button>
+          </li>
+          <li>
+            <button
+              class="main-nav-link tablinks"
+              onclick="openTab(event, 'diabetes')"
+            >
+              Diabetes dataset
+            </button>
+          </li>
+          <li>
+            <button
+              class="main-nav-link tablinks"
+              onclick="openTab(event, 'parkinsons')"
+            >
+              Parkinson's disease dataset
+            </button>
+          </li>
+          <li>
+            <button
+              class="main-nav-link tablinks"
+              onclick="openTab(event, 'breast')"
+            >
+              Breast cancer dataset
+            </button>
+          </li>
+          <li>
+            <button
+              class="main-nav-link tablinks"
+              onclick="openTab(event, 'comparison')"
+            >
+              Comparison of Models' Results
+            </button>
+          </li>
+        </ul>
+      </nav>
+
+      <button class="btn-mobile-nav">
+        <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+        <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+      </button>
+    </header>
+    <main>
+      <section class="doc">
+
+    <div class="doc-container">
+      <div class="tabcontent">
+        <div id="overview" class="tab-pane active">
+          <h1 class="h-primary">Disease Prediction System Documentation</h1>
+
+          <h2 class="h-secondary">1. Introduction</h2>
+          <p>In healthcare, predictive models for disease diagnosis and prognosis play a crucial role in early detection and effective treatment planning. The Disease Prediction System aims to address this need by providing a platform for users to input their medical data and obtain predictions for various diseases. By integrating machine learning algorithms with a user-friendly web interface, the system facilitates quick and accurate disease assessment, contributing to improved healthcare outcomes.</p>
+      
+          <h2 class="h-secondary">2. Features</h2>
+          <ul>
+              <li><strong>Disease Prediction</strong>: Users can input their medical data and receive predictions for diseases such as blood pressure abnormalities, diabetes, heart disease, breast cancer, Parkinson's disease, and liver pathology.</li>
+              <li><strong>Input Validation</strong>: The system validates user inputs to ensure they are within acceptable ranges and formats, providing error messages for invalid inputs.</li>
+              <li><strong>Confidence Percentage</strong>: Predictions are accompanied by confidence percentages indicating the level of certainty associated with each prediction.</li>
+              <li><strong>Visualization</strong>: Users can visualize their input values compared to normal ranges for each disease, aiding in interpretation and understanding.</li>
+              <li><strong>Comprehensive Documentation</strong>: The system provides extensive documentation and tutorials on its functionality, architecture, and machine learning techniques employed.</li>
+          </ul>
+      
+          <h2 class="h-secondary">3. Architecture</h2>
+          <p>The Disease Prediction System follows a client-server architecture, with the backend developed in Python and the frontend built using the Streamlit framework. The key components include:</p>
+          <ul>
+              <li><strong>Backend</strong>: Developed in Python, the backend incorporates machine learning models trained on medical datasets. It handles data processing, model prediction, and communication with the frontend.</li>
+              <li><strong>Frontend</strong>: Built using Streamlit, the frontend provides an interactive user interface where users can input their medical data and view predictions. It includes features for input validation, visualization, and documentation display.</li>
+              <li><strong>Machine Learning Models</strong>: Trained models for each disease are stored and loaded into memory when the application starts. These models are used for making predictions based on user input data.</li>
+              <li><strong>Data Preprocessing</strong>: Medical datasets undergo preprocessing to clean, standardize, and format the data, ensuring its suitability for machine learning algorithms.</li>
+          </ul>
+      
+          <h2 class="h-secondary">4. Usage</h2>
+          <p>To use the Disease Prediction System:</p>
+          <ol>
+              <li>Access the web application through the provided URL.</li>
+              <li>Select a disease from the sidebar menu.</li>
+              <li>Input relevant medical data into the provided fields.</li>
+              <li>Click the "Predict" button to generate predictions.</li>
+              <li>View the prediction results accompanied by confidence percentages.</li>
+              <li>Visualize user input values compared to normal ranges for each disease.</li>
+              <li>Refer to the comprehensive documentation for further information on system functionality and machine learning techniques.</li>
+          </ol>
+      
+          <h2 class="h-secondary">5. Development Environment</h2>
+          <p>To develop and deploy the Disease Prediction System, the following environment is recommended:</p>
+          <ul>
+              <li><strong>Python</strong>: Version 3.6 or higher.</li>
+              <li><strong>Libraries</strong>: NumPy, Streamlit, Matplotlib, Pickle.</li>
+              <li><strong>IDE</strong>: Any Python-compatible IDE (e.g., PyCharm, VSCode).</li>
+              <li><strong>Operating System</strong>: Compatible with Windows, macOS, and Linux.</li>
+          </ul>
+      
+          <h2 class="h-secondary">6. Future Enhancements</h2>
+          <p>Future enhancements for the Disease Prediction System may include:</p>
+          <ul>
+              <li>Improvements to user interface and visualization features for enhanced usability.</li>
+              <li>Expansion of disease coverage and inclusion of additional machine learning models for more comprehensive predictions.</li>
+              <li>Implementation of user authentication and feedback mechanisms to enhance user experience and system security.</li>
+              <li>Integration with external medical databases or APIs for real-time data retrieval and analysis.</li>
+          </ul>
+      
+          <h2 class="h-secondary">7. Conclusion</h2>
+          <p>The Disease Prediction System represents a valuable tool for disease diagnosis and prognosis, leveraging machine learning techniques to provide accurate predictions based on user-input medical data. With its user-friendly interface, comprehensive documentation, and potential for future enhancements, the system aims to contribute to improved healthcare outcomes and empower users to make informed decisions about their health.</p>
+          
+        </div>
+        <div id="heart" class="tab-pane">
+          <h1>Heart Dataset Documentation</h1>
+
+          <h2>Overview:</h2>
+      
+          <p>The "heart" dataset contains clinical and demographic information about patients, aiming to predict the presence of heart disease. It includes features such as age, sex, chest pain type, resting blood pressure, serum cholesterol level, fasting blood sugar level, resting electrocardiographic results, maximum heart rate achieved, exercise-induced angina, ST depression induced by exercise relative to rest, slope of the peak exercise ST segment, number of major vessels (0-3) colored by fluoroscopy, and thalassemia. The target variable, 'target', indicates the presence (1) or absence (0) of heart disease.</p>
+      
+          <h2>Dataset Information:</h2>
+      
+          <ul>
+              <li><strong>Dataset Name:</strong> Heart Dataset</li>
+              <li><strong>Source:</strong> UCI Machine Learning Repository</li>
+              <li><strong>Number of Instances:</strong> 1025</li>
+              <li><strong>Number of Features:</strong> 14</li>
+          </ul>
+      
+          <h2>Features:</h2>
+      
+          <ol>
+              <li><strong>age:</strong> Age of the patient (in years).</li>
+              <li><strong>sex:</strong> Gender of the patient (0 = female, 1 = male).</li>
+              <li><strong>cp:</strong> Chest pain type (1 = typical angina, 2 = atypical angina, 3 = non-anginal pain, 4 = asymptomatic).</li>
+              <li><strong>trestbps:</strong> Resting blood pressure (in mm Hg).</li>
+              <li><strong>chol:</strong> Serum cholesterol level (in mg/dl).</li>
+              <li><strong>fbs:</strong> Fasting blood sugar > 120 mg/dl (0 = false, 1 = true).</li>
+              <li><strong>restecg:</strong> Resting electrocardiographic results (0 = normal, 1 = having ST-T wave abnormality, 2 = showing probable or definite left ventricular hypertrophy).</li>
+              <li><strong>thalach:</strong> Maximum heart rate achieved.</li>
+              <li><strong>exang:</strong> Exercise-induced angina (0 = no, 1 = yes).</li>
+              <li><strong>oldpeak:</strong> ST depression induced by exercise relative to rest.</li>
+              <li><strong>slope:</strong> Slope of the peak exercise ST segment (1 = upsloping, 2 = flat, 3 = downsloping).</li>
+              <li><strong>ca:</strong> Number of major vessels colored by fluoroscopy (0-3).</li>
+              <li><strong>thal:</strong> Thalassemia (3 = normal, 6 = fixed defect, 7 = reversible defect).</li>
+              <li><strong>target:</strong> Presence of heart disease (0 = no, 1 = yes).</li>
+          </ol>
+          <h2>Target Variable:</h2>
+          <p>Target: This binary variable indicates the presence or absence of heart disease. Individuals with heart disease are labeled as 1, while individuals without heart disease are labeled as 0.</p>
+      
+          <h2>Potential Use Cases:</h2>
+      
+          <ol>
+              <li>Developing predictive models to identify individuals at risk of heart disease based on their clinical and demographic characteristics.</li>
+              <li>Exploring the relationship between various risk factors and the likelihood of heart disease.</li>
+              <li>Assessing the importance of different features in predicting the presence of heart disease.</li>
+          </ol>
+      
+          <h2>Availability:</h2>
+      
+          <p>The "heart" dataset is publicly available and can be accessed from the UCI Machine Learning Repository.</p>
+      
+          <h2>Citation:</h2>
+      
+          <p>Detrano, R., Janosi, A., Steinbrunn, W., Pfisterer, M., Schmid, J., Sandhu, S., Guppy, K., Lee, S., & Froelicher, V. (1989). International application of a new probability algorithm for the diagnosis of coronary artery disease. American Journal of Cardiology, 64(5), 304-310.</p>
+
+          <h2>Visualization:</h2>
+          <div class="row">
+              <div class="col-md-6">
+                  <h3>Histogram for the Distribution</h3>
+                  <p>A histogram is a graphical representation of the distribution of numerical data. It consists of bars that show the frequency of data within certain ranges. In the context of the diabetes dataset, a histogram may display the distribution of glucose levels or other clinical measurements.</p>
+                  <img src="img/visualizations/Heart_disease /hist.png" alt="Histogram for the Distribution" class="img-fluid">
+              </div>
+              <div class="col-md-6">
+                  <h3>Boxplot Graph</h3>
+                  <p>A boxplot, also known as a box-and-whisker plot, is a graphical method to summarize the distribution of a dataset. It displays the median, quartiles, and potential outliers. In the context of the diabetes dataset, a boxplot can provide insights into the spread and central tendency of features like glucose level or age.</p>
+                  <img src="img/visualizations/Heart_disease /boxplot.png" alt="Boxplot Graph" class="img-fluid">
+              </div>
+          </div>
+          <div class="row mt-4">
+              <div class="col-md-6">
+                  <h3>Correlation Graph</h3>
+                  <p>A correlation graph visually represents the relationship between pairs of variables in a dataset. It helps in understanding the strength and direction of the linear relationship between variables. In the context of the diabetes dataset, a correlation graph can show how different clinical measurements are related to each other.</p>
+                  <img src="img/visualizations/Heart_disease /correlations.png" alt="Correlation Graph" class="img-fluid">
+              </div>
+              <div class="col-md-6">
+                  <h3>Confusion Matrix</h3>
+                  <p>A confusion matrix is a table that is often used to describe the performance of a classification model on a set of test data for which the true values are known. It helps in understanding the performance of the model in terms of true positive, true negative, false positive, and false negative predictions. In the context of the diabetes dataset, confusion matrices can show the performance of different classification models like Logistic Regression, SVM, and Gaussian Naive Bayes.</p>
+                  <p>Below are the confusion matrices for the trained models:</p>
+                  <ul>
+                      <li>Confusion Matrix of LR</li>
+                      <li>Confusion Matrix of SVM</li>
+                      <li>Confusion Matrix of GNB</li>
+                  </ul>
+                  <img src="img/visualizations/Heart_disease /lr-con.png" alt="Confusion Matrix of LR" class="img-fluid">
+                  <img src="img/visualizations/Heart_disease /naive-con.png" alt="Confusion Matrix of SVM" class="img-fluid">
+                  <img src="img/visualizations/Heart_disease /svm-con.png" alt="Confusion Matrix of GNB" class="img-fluid">
+              </div>
+          </div>
+          <div class="row mt-4">
+              <div class="col-md-12">
+                  <h3>Model Comparison:</h3>
+                  <p>Three different models (Logistic Regression, SVM, Gaussian Naive Bayes) were trained on the diabetes dataset, and below are the results:</p>
+                  <ul>
+                      <li>Comparison of Accuracy (LR, SVM, GNB)</li>
+                      <li>Comparison of Precision (LR, SVM, GNB)</li>
+                      <li>Comparison of Recall (LR, SVM, GNB)</li>
+                      <li>Comparison of F1-Score (LR, SVM, GNB)</li>
+                  </ul>
+                  <div class="row">
+                      <div class="col-md-6">
+                          <img src="img/visualizations/Heart_disease /accuracy-comp.png" alt="Comparison of Accuracy" class="img-fluid">
+                      </div>
+                      <div class="col-md-6">
+                          <img src="img/visualizations/Heart_disease /precision-comp.png" alt="Comparison of Precision" class="img-fluid">
+                      </div>
+                  </div>
+                  <div class="row mt-4">
+                      <div class="col-md-6">
+                          <img src="img/visualizations/Heart_disease /recall-comp.png" alt="Comparison of Recall" class="img-fluid">
+                      </div>
+                      <div class="col-md-6">
+                          <img src="img/visualizations/Heart_disease /f1-score-comp.png" alt="Comparison of F1-Score" class="img-fluid">
+                      </div>
+                  </div>
+              </div>
+          </div>
+          
+        </div>
+    
+        <div id="diabetes" class="tab-pane active">
+          <h1>Diabetes Dataset Documentation</h1>
+
+          <h2>Overview:</h2>
+          <p>The "diabetes" dataset contains clinical measurements and other attributes for 768 patients, with the aim of predicting whether a patient has diabetes (the 'Outcome' variable). These attributes include information such as the number of pregnancies, glucose level, blood pressure, skin thickness, insulin level, BMI (Body Mass Index), diabetes pedigree function, and age.</p>
+
+          <h2>Dataset Information:</h2>
+          <ul>
+              <li><strong>Dataset Name:</strong> Diabetes Dataset</li>
+              <li><strong>Source:</strong> UCI Machine Learning Repository</li>
+              <li><strong>Number of Instances:</strong> 768</li>
+              <li><strong>Number of Features:</strong> 9</li>
+          </ul>
+
+          <h2>Features:</h2>
+          <ol>
+              <li><strong>Pregnancies:</strong> Number of times pregnant.</li>
+              <li><strong>Glucose:</strong> Plasma glucose concentration after 2 hours in an oral glucose tolerance test.</li>
+              <li><strong>BloodPressure:</strong> Diastolic blood pressure (mm Hg).</li>
+              <li><strong>SkinThickness:</strong> Triceps skin fold thickness (mm).</li>
+              <li><strong>Insulin:</strong> 2-Hour serum insulin (mu U/ml).</li>
+              <li><strong>BMI:</strong> Body Mass Index (weight in kg/(height in m)^2).</li>
+              <li><strong>DiabetesPedigreeFunction:</strong> Diabetes pedigree function (a function which scores likelihood of diabetes based on family history).</li>
+              <li><strong>Age:</strong> Age of the patient (years).</li>
+              <li><strong>Outcome:</strong> Binary indicator of diabetes status. '0' indicates no diabetes, while '1' indicates the presence of diabetes.</li>
+          </ol>
+
+          <h2>Target Variable:</h2>
+          <p>Outcome: This binary variable indicates the presence or absence of diabetes mellitus. Individuals with diabetes mellitus are labeled as 1, while non-diabetic individuals are labeled as 0.</p>
+
+          <h2>Potential Use Cases:</h2>
+          <ol>
+              <li>Development of predictive models to identify individuals at risk of developing diabetes based on their clinical measurements and attributes.</li>
+              <li>Analysis of the relationships between different risk factors and the likelihood of diabetes.</li>
+              <li>Exploration of feature importance and identification of key predictors for diabetes diagnosis.</li>
+          </ol>
+
+          <h2>Availability:</h2>
+          <p>The "diabetes" dataset is publicly available and can be accessed from the UCI Machine Learning Repository.</p>
+
+          <h2>Citation:</h2>
+          <p>Dua, D. and Graff, C. (2019). UCI Machine Learning Repository [http://archive.ics.uci.edu/ml]. Irvine, CA: University of California, School of Information and Computer Science.</p>
+
+          
+          <h2>Visualization:</h2>
+          <div class="row">
+              <div class="col-md-6">
+                  <h3>Histogram for the Distribution</h3>
+                  <p>A histogram is a graphical representation of the distribution of numerical data. It consists of bars that show the frequency of data within certain ranges. In the context of the diabetes dataset, a histogram may display the distribution of glucose levels or other clinical measurements.</p>
+                  <img src="img/visualizations/Diabetes_prediction/hist.png" alt="Histogram for the Distribution" class="img-fluid">
+              </div>
+              <div class="col-md-6">
+                  <h3>Boxplot Graph</h3>
+                  <p>A boxplot, also known as a box-and-whisker plot, is a graphical method to summarize the distribution of a dataset. It displays the median, quartiles, and potential outliers. In the context of the diabetes dataset, a boxplot can provide insights into the spread and central tendency of features like glucose level or age.</p>
+                  <img src="img/visualizations/Diabetes_prediction/boxplot.png" alt="Boxplot Graph" class="img-fluid">
+              </div>
+          </div>
+          <div class="row mt-4">
+              <div class="col-md-6">
+                  <h3>Correlation Graph</h3>
+                  <p>A correlation graph visually represents the relationship between pairs of variables in a dataset. It helps in understanding the strength and direction of the linear relationship between variables. In the context of the diabetes dataset, a correlation graph can show how different clinical measurements are related to each other.</p>
+                  <img src="img/visualizations/Diabetes_prediction/correlations.png" alt="Correlation Graph" class="img-fluid">
+              </div>
+              <div class="col-md-6">
+                  <h3>Confusion Matrix</h3>
+                  <p>A confusion matrix is a table that is often used to describe the performance of a classification model on a set of test data for which the true values are known. It helps in understanding the performance of the model in terms of true positive, true negative, false positive, and false negative predictions. In the context of the diabetes dataset, confusion matrices can show the performance of different classification models like Logistic Regression, SVM, and Gaussian Naive Bayes.</p>
+                  <p>Below are the confusion matrices for the trained models:</p>
+                  <ul>
+                      <li>Confusion Matrix of LR</li>
+                      <li>Confusion Matrix of SVM</li>
+                      <li>Confusion Matrix of GNB</li>
+                  </ul>
+                  <img src="img/visualizations/Diabetes_prediction/lr-con.png" alt="Confusion Matrix of LR" class="img-fluid">
+                  <img src="img/visualizations/Diabetes_prediction/naive-con.png" alt="Confusion Matrix of SVM" class="img-fluid">
+                  <img src="img/visualizations/Diabetes_prediction/svm-con.png" alt="Confusion Matrix of GNB" class="img-fluid">
+              </div>
+          </div>
+          <div class="row mt-4">
+              <div class="col-md-12">
+                  <h3>Model Comparison:</h3>
+                  <p>Three different models (Logistic Regression, SVM, Gaussian Naive Bayes) were trained on the diabetes dataset, and below are the results:</p>
+                  <ul>
+                      <li>Comparison of Accuracy (LR, SVM, GNB)</li>
+                      <li>Comparison of Precision (LR, SVM, GNB)</li>
+                      <li>Comparison of Recall (LR, SVM, GNB)</li>
+                      <li>Comparison of F1-Score (LR, SVM, GNB)</li>
+                  </ul>
+                  <div class="row">
+                      <div class="col-md-6">
+                          <img src="img/visualizations/Diabetes_prediction/accuracy-comp.png" alt="Comparison of Accuracy" class="img-fluid">
+                      </div>
+                      <div class="col-md-6">
+                          <img src="img/visualizations/Diabetes_prediction/precision-comp.png" alt="Comparison of Precision" class="img-fluid">
+                      </div>
+                  </div>
+                  <div class="row mt-4">
+                      <div class="col-md-6">
+                          <img src="img/visualizations/Diabetes_prediction/recall-comp.png" alt="Comparison of Recall" class="img-fluid">
+                      </div>
+                      <div class="col-md-6">
+                          <img src="img/visualizations/Diabetes_prediction/f1-score-comp.png" alt="Comparison of F1-Score" class="img-fluid">
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+    
+        <div id="parkinsons" class="tab-pane">
+          <h1>Parkinsons Dataset Documentation</h1>
+          <h2>1. Overview</h2>
+            <p>The Parkinson's Disease dataset is a collection of biomedical voice measurements obtained from individuals with and without Parkinson's disease. It comprises acoustic features extracted from sustained phonations of the vowel sound "ah" from 195 subjects, including 147 patients with Parkinson's disease (PD) and 48 healthy individuals (HC). The dataset aims to facilitate the development of predictive models for Parkinson's disease diagnosis based on voice characteristics.</p>
+        
+          <h2>Dataset Information:</h2>
+          <ul>
+            <li><strong>Name:</strong> Parkinsons</li>
+            <li><strong>Source:</strong> UCI Machine Learning Repository</li>
+            <li><strong>Number of Instances:</strong> 195</li>
+            <li><strong>Number of Features:</strong> 24 (23 features and 1 target variable)</li>
+          </ul>
+        
+          <h2>Attribute Information:</h2>
+          <ol>
+            <li><strong>name:</strong> Identifier for each individual.</li>
+            <li><strong>MDVP:Fo(Hz):</strong> Average vocal fundamental frequency.</li>
+            <li><strong>MDVP:Fhi(Hz):</strong> Maximum vocal fundamental frequency.</li>
+            <li><strong>MDVP:Flo(Hz):</strong> Minimum vocal fundamental frequency.</li>
+            <li><strong>MDVP:Jitter(%):</strong> Variation in vocal fundamental frequency.</li>
+            <li><strong>MDVP:Jitter(Abs):</strong> Absolute jitter measure.</li>
+            <li><strong>MDVP:RAP:</strong> Variation in vocal fundamental frequency per unit of time.</li>
+            <li><strong>MDVP:PPQ:</strong> Variation in vocal fundamental frequency per unit of time.</li>
+            <li><strong>Jitter:DDP:</strong> Variation in vocal fundamental frequency per unit of time.</li>
+            <li><strong>MDVP:Shimmer:</strong> Variation in vocal amplitude.</li>
+            <li><strong>MDVP:Shimmer(dB):</strong> Variation in vocal amplitude in decibels.</li>
+            <li><strong>Shimmer:APQ3:</strong> Variation in vocal amplitude.</li>
+            <li><strong>Shimmer:APQ5:</strong> Variation in vocal amplitude.</li>
+            <li><strong>MDVP:APQ:</strong> Variation in vocal amplitude.</li>
+            <li><strong>Shimmer:DDA:</strong> Variation in vocal amplitude.</li>
+            <li><strong>NHR:</strong> Ratio of noise to tonal components in the voice.</li>
+            <li><strong>HNR:</strong> Ratio of tonal components to noise in the voice.</li>
+            <li><strong>RPDE:</strong> Nonlinear dynamical complexity measure.</li>
+            <li><strong>DFA:</strong> Signal fractal scaling exponent.</li>
+            <li><strong>spread1:</strong> Nonlinear dynamical complexity measure.</li>
+            <li><strong>spread2:</strong> Nonlinear dynamical complexity measure.</li>
+            <li><strong>D2:</strong> Nonlinear dynamical complexity measure.</li>
+            <li><strong>PPE:</strong> Nonlinear dynamical complexity measure.</li>
+            <li><strong>status:</strong> Binary indicator of Parkinson's disease presence (1 for PD, 0 for healthy).</li>
+        </ol>
+        
+        
+          <h2>Target Variable:</h2>
+          <p>status: This binary variable indicates the presence or absence of Parkinson's disease. Individuals with Parkinson's disease are labeled as 1, while healthy individuals are labeled as 0.</p>
+        
+        
+          <h2>Potential Use Cases:</h2>
+          <ol>
+            <li>Classification models to predict the presence or absence of Parkinson's disease based on the extracted features.</li>
+            <li>Regression models to predict clinical measures or severity of Parkinson's disease based on vocal characteristics.</li>
+            <li>Clustering techniques to explore patterns and subgroups within the dataset, potentially identifying distinct phenotypes or subtypes of Parkinson's disease.</li>
+          </ol>
+        
+          <h2>Dataset Availability:</h2>
+          <p>The "parkinsons" dataset is publicly available and can be accessed from the UCI Machine Learning Repository.</p>
+        
+          <h2>Citation:</h2>
+          <p>Sakar, B. E., Serbes, G., Sakar, C. O., Aydin, T., & Kursun, O. (2018). A comparative analysis of speech signal processing algorithms for Parkinson's disease classification and the use of the tunable Q-factor wavelet transform. Applied Soft Computing, 62, 750-761.</p>
+
+          <h2>Visualization:</h2>
+          <div class="row">
+              <div class="col-md-6">
+                  <h3>Histogram for the Distribution</h3>
+                  <p>A histogram is a graphical representation of the distribution of numerical data. It consists of bars that show the frequency of data within certain ranges. In the context of the diabetes dataset, a histogram may display the distribution of glucose levels or other clinical measurements.</p>
+                  <img src="img/visualizations/ Parkinson's/hist.png" alt="Histogram for the Distribution" class="img-fluid">
+              </div>
+              <div class="col-md-6">
+                  <h3>Boxplot Graph</h3>
+                  <p>A boxplot, also known as a box-and-whisker plot, is a graphical method to summarize the distribution of a dataset. It displays the median, quartiles, and potential outliers. In the context of the diabetes dataset, a boxplot can provide insights into the spread and central tendency of features like glucose level or age.</p>
+                  <img src="img/visualizations/ Parkinson's/boxplot.png" alt="Boxplot Graph" class="img-fluid">
+              </div>
+          </div>
+          <div class="row mt-4">
+              <div class="col-md-6">
+                  <h3>Correlation Graph</h3>
+                  <p>A correlation graph visually represents the relationship between pairs of variables in a dataset. It helps in understanding the strength and direction of the linear relationship between variables. In the context of the diabetes dataset, a correlation graph can show how different clinical measurements are related to each other.</p>
+                  <img src="img/visualizations/ Parkinson's/correlations.png" alt="Correlation Graph" class="img-fluid">
+              </div>
+              <div class="col-md-6">
+                  <h3>Confusion Matrix</h3>
+                  <p>A confusion matrix is a table that is often used to describe the performance of a classification model on a set of test data for which the true values are known. It helps in understanding the performance of the model in terms of true positive, true negative, false positive, and false negative predictions. In the context of the diabetes dataset, confusion matrices can show the performance of different classification models like Logistic Regression, SVM, and Gaussian Naive Bayes.</p>
+                  <p>Below are the confusion matrices for the trained models:</p>
+                  <ul>
+                      <li>Confusion Matrix of LR</li>
+                      <li>Confusion Matrix of SVM</li>
+                      <li>Confusion Matrix of GNB</li>
+                  </ul>
+                  <img src="img/visualizations/ Parkinson's/lr-con.png" alt="Confusion Matrix of LR" class="img-fluid">
+                  <img src="img/visualizations/ Parkinson's/naive-con.png" alt="Confusion Matrix of SVM" class="img-fluid">
+                  <img src="img/visualizations/ Parkinson's/svm-con.png" alt="Confusion Matrix of GNB" class="img-fluid">
+              </div>
+          </div>
+          <div class="row mt-4">
+              <div class="col-md-12">
+                  <h3>Model Comparison:</h3>
+                  <p>Three different models (Logistic Regression, SVM, Gaussian Naive Bayes) were trained on the diabetes dataset, and below are the results:</p>
+                  <ul>
+                      <li>Comparison of Accuracy (LR, SVM, GNB)</li>
+                      <li>Comparison of Precision (LR, SVM, GNB)</li>
+                      <li>Comparison of Recall (LR, SVM, GNB)</li>
+                      <li>Comparison of F1-Score (LR, SVM, GNB)</li>
+                  </ul>
+                  <div class="row">
+                      <div class="col-md-6">
+                          <img src="img/visualizations/ Parkinson's/accuracy-comp.png" alt="Comparison of Accuracy" class="img-fluid">
+                      </div>
+                      <div class="col-md-6">
+                          <img src="img/visualizations/ Parkinson's/precision-comp.png" alt="Comparison of Precision" class="img-fluid">
+                      </div>
+                  </div>
+                  <div class="row mt-4">
+                      <div class="col-md-6">
+                          <img src="img/visualizations/ Parkinson's/recall.png" alt="Comparison of Recall" class="img-fluid">
+                      </div>
+                      <div class="col-md-6">
+                          <img src="img/visualizations/ Parkinson's/f1-score-comp.png" alt="Comparison of F1-Score" class="img-fluid">
+                      </div>
+                  </div>
+              </div>
+          </div>
+        
+        
+          
+         
+        </div>
+
+        <div id="breast" class="tab-pane">
+          <h1>Breast Cancer Dataset Documentation</h1>
+
+          <h2>Overview:</h2>
+      
+          <p>The "breast-cancer.csv" dataset is a collection of clinical measurements and features extracted from breast cancer biopsy samples. These features are used to predict the diagnosis of breast cancer, which can be either malignant (cancerous) or benign (non-cancerous). The dataset contains information about various attributes such as radius, texture, perimeter, area, smoothness, compactness, concavity, concave points, symmetry, and fractal dimension, among others.</p>
+      
+          <h2>Dataset Information:</h2>
+      
+          <ul>
+              <li><strong>Dataset Name:</strong> Breast Cancer Dataset</li>
+              <li><strong>Source:</strong> UCI Machine Learning Repository</li>
+              <li><strong>Number of Instances:</strong> 569</li>
+              <li><strong>Number of Features:</strong> 32 (including the target variable 'diagnosis' and an identifier 'id')</li>
+          </ul>
+      
+          <h2>Features:</h2>
+      
+          <p>The dataset contains the following features:</p>
+          <ol>
+              <li><strong>id:</strong> Unique identifier for each biopsy sample.</li>
+              <li><strong>diagnosis:</strong> Diagnosis of the breast cancer (target variable). It can be either 'M' for malignant or 'B' for benign.</li>
+              <li><strong>radius_mean:</strong> Mean of distances from center to points on the perimeter.</li>
+              <li><strong>texture_mean:</strong> Standard deviation of gray-scale values.</li>
+              <li><strong>perimeter_mean:</strong> Mean size of the core tumor.</li>
+              <li><strong>area_mean:</strong> Mean area of the core tumor.</li>
+              <li><strong>smoothness_mean:</strong> Mean of local variation in radius lengths.</li>
+              <li><strong>compactness_mean:</strong> Mean of perimeter^2 / area - 1.0.</li>
+              <li><strong>concavity_mean:</strong> Mean severity of concave portions of the contour.</li>
+              <li><strong>concave points_mean:</strong> Mean number of concave portions of the contour.</li>
+              <li><strong>symmetry_mean:</strong> Mean symmetry of cell nuclei.</li>
+              <li><strong>fractal_dimension_mean:</strong> Mean of "coastline approximation" - 1.</li>
+              <li><strong>radius_se:</strong> Standard error of the mean of distances from center to points on the perimeter.</li>
+              <li><strong>texture_se:</strong> Standard error of gray-scale values.</li>
+              <li><strong>perimeter_se:</strong> Standard error of the size of the core tumor.</li>
+              <li><strong>area_se:</strong> Standard error of the area of the core tumor.</li>
+              <li><strong>smoothness_se:</strong> Standard error of local variation in radius lengths.</li>
+              <li><strong>compactness_se:</strong> Standard error of perimeter^2 / area - 1.0.</li>
+              <li><strong>concavity_se:</strong> Standard error of severity of concave portions of the contour.</li>
+              <li><strong>concave points_se:</strong> Standard error of number of concave portions of the contour.</li>
+              <li><strong>symmetry_se:</strong> Standard error of symmetry of cell nuclei.</li>
+              <li><strong>fractal_dimension_se:</strong> Standard error of "coastline approximation" - 1.</li>
+              <li><strong>radius_worst:</strong> Worst or largest mean of distances from center to points on the perimeter.</li>
+              <li><strong>texture_worst:</strong> Worst or largest standard deviation of gray-scale values.</li>
+              <li><strong>perimeter_worst:</strong> Worst or largest size of the core tumor.</li>
+              <li><strong>area_worst:</strong> Worst or largest area of the core tumor.</li>
+              <li><strong>smoothness_worst:</strong> Worst or largest local variation in radius lengths.</li>
+              <li><strong>compactness_worst:</strong> Worst or largest perimeter^2 / area - 1.0.</li>
+              <li><strong>concavity_worst:</strong> Worst or largest severity of concave portions of the contour.</li>
+              <li><strong>concave points_worst:</strong> Worst or largest number of concave portions of the contour.</li>
+              <li><strong>symmetry_worst:</strong> Worst or largest symmetry of cell nuclei.</li>
+              <li><strong>fractal_dimension_worst:</strong> Worst or largest "coastline approximation" - 1.</li>
+          </ol>
+      
+      
+          <h2>Target Variable:</h2>
+      
+          <p>The target variable in this dataset is 'diagnosis', which indicates the diagnosis of breast cancer. It can take two values: 'M' for malignant (cancerous) and 'B' for benign (non-cancerous).</p>
+      
+          <h2>Potential Use Cases:</h2>
+      
+          <ol>
+              <li>Classification models to predict breast cancer diagnosis based on clinical measurements and features.</li>
+              <li>Feature selection techniques to identify the most influential features in determining cancer diagnosis.</li>
+              <li>Understanding the relationships between different features and their impact on cancer diagnosis.</li>
+          </ol>
+      
+          <h2>Availability:</h2>
+      
+          <p>The "breast-cancer.csv" dataset is publicly available and can be accessed from the UCI Machine Learning Repository.</p>
+      
+          <h2>Citation:</h2>
+      
+          <p>Dua, D. and Graff, C. (2019). UCI Machine Learning Repository [http://archive.ics.uci.edu/ml]. Irvine, CA: University of California, School of Information and Computer Science.</p>
+          <h2>Visualization:</h2>
+          <div class="row">
+              <div class="col-md-6">
+                  <h3>Histogram for the Distribution</h3>
+                  <p>A histogram is a graphical representation of the distribution of numerical data. It consists of bars that show the frequency of data within certain ranges. In the context of the diabetes dataset, a histogram may display the distribution of glucose levels or other clinical measurements.</p>
+                  <img src="img/visualizations/Breast_cancer /hist.png" alt="Histogram for the Distribution" class="img-fluid">
+              </div>
+              <div class="col-md-6">
+                  <h3>Boxplot Graph</h3>
+                  <p>A boxplot, also known as a box-and-whisker plot, is a graphical method to summarize the distribution of a dataset. It displays the median, quartiles, and potential outliers. In the context of the diabetes dataset, a boxplot can provide insights into the spread and central tendency of features like glucose level or age.</p>
+                  <img src="img/visualizations/Breast_cancer /boxplot.png" alt="Boxplot Graph" class="img-fluid">
+              </div>
+          </div>
+          <div class="row mt-4">
+              <div class="col-md-6">
+                  <h3>Correlation Graph</h3>
+                  <p>A correlation graph visually represents the relationship between pairs of variables in a dataset. It helps in understanding the strength and direction of the linear relationship between variables. In the context of the diabetes dataset, a correlation graph can show how different clinical measurements are related to each other.</p>
+                  <img src="img/visualizations/Breast_cancer /correlations.png" alt="Correlation Graph" class="img-fluid">
+              </div>
+              <div class="col-md-6">
+                  <h3>Confusion Matrix</h3>
+                  <p>A confusion matrix is a table that is often used to describe the performance of a classification model on a set of test data for which the true values are known. It helps in understanding the performance of the model in terms of true positive, true negative, false positive, and false negative predictions. In the context of the diabetes dataset, confusion matrices can show the performance of different classification models like Logistic Regression, SVM, and Gaussian Naive Bayes.</p>
+                  <p>Below are the confusion matrices for the trained models:</p>
+                  <ul>
+                      <li>Confusion Matrix of LR</li>
+                      <li>Confusion Matrix of SVM</li>
+                      <li>Confusion Matrix of GNB</li>
+                  </ul>
+                  <img src="img/visualizations/Breast_cancer /lr-con.png" alt="Confusion Matrix of LR" class="img-fluid">
+                  <img src="img/visualizations/Breast_cancer /naive-con.png" alt="Confusion Matrix of SVM" class="img-fluid">
+                  <img src="img/visualizations/Breast_cancer /svm-con.png" alt="Confusion Matrix of GNB" class="img-fluid">
+              </div>
+          </div>
+          <div class="row mt-4">
+              <div class="col-md-12">
+                  <h3>Model Comparison:</h3>
+                  <p>Three different models (Logistic Regression, SVM, Gaussian Naive Bayes) were trained on the diabetes dataset, and below are the results:</p>
+                  <ul>
+                      <li>Comparison of Accuracy (LR, SVM, GNB)</li>
+                      <li>Comparison of Precision (LR, SVM, GNB)</li>
+                      <li>Comparison of Recall (LR, SVM, GNB)</li>
+                      <li>Comparison of F1-Score (LR, SVM, GNB)</li>
+                  </ul>
+                  <div class="row">
+                      <div class="col-md-6">
+                          <img src="img/visualizations/Breast_cancer /accuracy-comp.png" alt="Comparison of Accuracy" class="img-fluid">
+                      </div>
+                      <div class="col-md-6">
+                          <img src="img/visualizations/Breast_cancer /precision-comp.png" alt="Comparison of Precision" class="img-fluid">
+                      </div>
+                  </div>
+                  <div class="row mt-4">
+                      <div class="col-md-6">
+                          <img src="img/visualizations/Breast_cancer /recall-comp.png" alt="Comparison of Recall" class="img-fluid">
+                      </div>
+                      <div class="col-md-6">
+                          <img src="img/visualizations/Breast_cancer /f1-score-comp.png" alt="Comparison of F1-Score" class="img-fluid">
+                      </div>
+                  </div>
+              </div>
+          </div>
+        </div>
+
+
+        <div id="comparison" class="tab-pane">
+          <h1>Model Comparison across Multiple Datasets</h1>
+
+          <p>In this analysis, three machine learning models, namely Logistic Regression (LR), Support Vector Machine (SVM), and Gaussian Naive Bayes (GNB), were trained on four different datasets: heart disease, diabetes, Parkinson's disease, and breast cancer. The performance of these models was evaluated using several evaluation metrics, including accuracy, precision, recall, and F1 score.</p>
+      
+          <h2>Evaluation Matrices</h2>
+          <ul>
+              <li><strong>Accuracy:</strong> Measures the proportion of correctly classified instances out of the total instances.</li>
+              <li><strong>Precision:</strong> Measures the proportion of true positive instances out of all predicted positive instances.</li>
+              <li><strong>Recall:</strong> Measures the proportion of actual positives that were correctly predicted by the model.</li>
+              <li><strong>F1 Score:</strong> Harmonic mean of precision and recall, providing a balance between precision and recall.</li>
+          </ul>
+      
+          <h2>Visualization</h2>
+          <p>Each evaluation metric was visualized across the four datasets, with separate graphs for LR, SVM, and GNB models. This visualization enables a comparative analysis of model performance across different datasets.</p>
+      
+          <div class="chart-container">
+              <h3>Accuracy</h3>
+              <div class="chart">
+                  <img src="img/visualizations/general-comp/accuracy-comp.png" alt="Accuracy Chart">
+              </div>
+          </div>
+      
+          <div class="chart-container">
+              <h3>Precision</h3>
+              <div class="chart">
+                  <img src="img/visualizations/general-comp/precision-comp.png" alt="Precision Chart">
+              </div>
+          </div>
+      
+          <div class="chart-container">
+              <h3>Recall</h3>
+              <div class="chart">
+                  <img src="img/visualizations/general-comp/recall-comp.png" alt="Recall Chart">
+              </div>
+          </div>
+      
+          <div class="chart-container">
+              <h3>F1 Score</h3>
+              <div class="chart">
+                  <img src="img/visualizations/general-comp/f1-score-comp.png" alt="F1 Score Chart">
+              </div>
+          </div>
+      
+          <h2>Conclusion</h2>
+          <p>The comparative analysis of model performance across multiple datasets provides valuable insights into the effectiveness of different machine learning algorithms for various medical prediction tasks. Researchers and practitioners can leverage these findings to select the most suitable model for specific healthcare applications, thereby enhancing diagnostic accuracy and patient outcomes.</p>
+      
+         
+        </div>
+    </div>
+      </section>
+    </main>
+    <div class="footer" id="footer">
+      <script>
+          var currentYear = new Date().getFullYear();
+          document.getElementById("footer").innerHTML = "© " + currentYear + " Disease Prediction System | Developed by Ahmed Mohamed";
+      </script>
+  </div>
+  </body>
+</html>

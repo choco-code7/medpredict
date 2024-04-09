@@ -1,0 +1,73 @@
+    <h1>Breast Cancer Dataset Documentation</h1>
+
+    <h2>Overview:</h2>
+
+    <p>The "breast-cancer.csv" dataset is a collection of clinical measurements and features extracted from breast cancer biopsy samples. These features are used to predict the diagnosis of breast cancer, which can be either malignant (cancerous) or benign (non-cancerous). The dataset contains information about various attributes such as radius, texture, perimeter, area, smoothness, compactness, concavity, concave points, symmetry, and fractal dimension, among others.</p>
+
+    <h2>Dataset Information:</h2>
+
+    <ul>
+        <li><strong>Dataset Name:</strong> Breast Cancer Dataset</li>
+        <li><strong>Source:</strong> UCI Machine Learning Repository</li>
+        <li><strong>Number of Instances:</strong> 569</li>
+        <li><strong>Number of Features:</strong> 32 (including the target variable 'diagnosis' and an identifier 'id')</li>
+    </ul>
+
+    <h2>Features:</h2>
+
+    <p>The dataset contains the following features:</p>
+    <ul>
+        <li><strong>id:</strong> Unique identifier for each biopsy sample.</li>
+        <li><strong>diagnosis:</strong> Diagnosis of the breast cancer (target variable). It can be either 'M' for malignant or 'B' for benign.</li>
+        <li><strong>radius_mean:</strong> Mean of distances from center to points on the perimeter.</li>
+        <li><strong>texture_mean:</strong> Standard deviation of gray-scale values.</li>
+        <li><strong>perimeter_mean:</strong> Mean size of the core tumor.</li>
+        <li><strong>area_mean:</strong> Mean area of the core tumor.</li>
+        <li><strong>smoothness_mean:</strong> Mean of local variation in radius lengths.</li>
+        <li><strong>compactness_mean:</strong> Mean of perimeter^2 / area - 1.0.</li>
+        <li><strong>concavity_mean:</strong> Mean severity of concave portions of the contour.</li>
+        <li><strong>concave points_mean:</strong> Mean number of concave portions of the contour.</li>
+        <li><strong>symmetry_mean:</strong> Mean symmetry of cell nuclei.</li>
+        <li><strong>fractal_dimension_mean:</strong> Mean of "coastline approximation" - 1.</li>
+        <li><strong>radius_se:</strong> Standard error of the mean of distances from center to points on the perimeter.</li>
+        <li><strong>texture_se:</strong> Standard error of gray-scale values.</li>
+        <li><strong>perimeter_se:</strong> Standard error of the size of the core tumor.</li>
+        <li><strong>area_se:</strong> Standard error of the area of the core tumor.</li>
+        <li><strong>smoothness_se:</strong> Standard error of local variation in radius lengths.</li>
+        <li><strong>compactness_se:</strong> Standard error of perimeter^2 / area - 1.0.</li>
+        <li><strong>concavity_se:</strong> Standard error of severity of concave portions of the contour.</li>
+        <li><strong>concave points_se:</strong> Standard error of number of concave portions of the contour.</li>
+        <li><strong>symmetry_se:</strong> Standard error of symmetry of cell nuclei.</li>
+        <li><strong>fractal_dimension_se:</strong> Standard error of "coastline approximation" - 1.</li>
+        <li><strong>radius_worst:</strong> Worst or largest mean of distances from center to points on the perimeter.</li>
+        <li><strong>texture_worst:</strong> Worst or largest standard deviation of gray-scale values.</li>
+        <li><strong>perimeter_worst:</strong> Worst or largest size of the core tumor.</li>
+        <li><strong>area_worst:</strong> Worst or largest area of the core tumor.</li>
+        <li><strong>smoothness_worst:</strong> Worst or largest local variation in radius lengths.</li>
+        <li><strong>compactness_worst:</strong> Worst or largest perimeter^2 / area - 1.0.</li>
+        <li><strong>concavity_worst:</strong> Worst or largest severity of concave portions of the contour.</li>
+        <li><strong>concave points_worst:</strong> Worst or largest number of concave portions of the contour.</li>
+        <li><strong>symmetry_worst:</strong> Worst or largest symmetry of cell nuclei.</li>
+        <li><strong>fractal_dimension_worst:</strong> Worst or largest "coastline approximation" - 1.</li>
+    </ul>
+
+
+    <h2>Target Variable:</h2>
+
+    <p>The target variable in this dataset is 'diagnosis', which indicates the diagnosis of breast cancer. It can take two values: 'M' for malignant (cancerous) and 'B' for benign (non-cancerous).</p>
+
+    <h2>Potential Use Cases:</h2>
+
+    <ol>
+        <li>Classification models to predict breast cancer diagnosis based on clinical measurements and features.</li>
+        <li>Feature selection techniques to identify the most influential features in determining cancer diagnosis.</li>
+        <li>Understanding the relationships between different features and their impact on cancer diagnosis.</li>
+    </ol>
+
+    <h2>Availability:</h2>
+
+    <p>The "breast-cancer.csv" dataset is publicly available and can be accessed from the UCI Machine Learning Repository.</p>
+
+    <h2>Citation:</h2>
+
+    <p>Dua, D. and Graff, C. (2019). UCI Machine Learning Repository [http://archive.ics.uci.edu/ml]. Irvine, CA: University of California, School of Information and Computer Science.</p>

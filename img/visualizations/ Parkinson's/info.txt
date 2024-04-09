@@ -1,0 +1,59 @@
+ <h1>Parkinsons Dataset Documentation</h1>
+
+  <h2>Dataset Information:</h2>
+  <ul>
+    <li><strong>Name:</strong> Parkinsons</li>
+    <li><strong>Source:</strong> UCI Machine Learning Repository</li>
+    <li><strong>Number of Instances:</strong> 195</li>
+    <li><strong>Number of Features:</strong> 24 (23 features and 1 target variable)</li>
+  </ul>
+
+  <h2>Attribute Information:</h2>
+  <ol>
+    <li>name: Identifier for each individual.</li>
+    <li>MDVP:Fo(Hz): Average vocal fundamental frequency.</li>
+    <li>MDVP:Fhi(Hz): Maximum vocal fundamental frequency.</li>
+    <li>MDVP:Flo(Hz): Minimum vocal fundamental frequency.</li>
+    <li>MDVP:Jitter(%): Variation in vocal fundamental frequency.</li>
+    <li>MDVP:Jitter(Abs): Absolute jitter measure.</li>
+    <li>MDVP:RAP: Variation in vocal fundamental frequency per unit of time.</li>
+    <li>MDVP:PPQ: Variation in vocal fundamental frequency per unit of time.</li>
+    <li>Jitter:DDP: Variation in vocal fundamental frequency per unit of time.</li>
+    <li>MDVP:Shimmer: Variation in vocal amplitude.</li>
+    <li>MDVP:Shimmer(dB): Variation in vocal amplitude in decibels.</li>
+    <li>Shimmer:APQ3: Variation in vocal amplitude.</li>
+    <li>Shimmer:APQ5: Variation in vocal amplitude.</li>
+    <li>MDVP:APQ: Variation in vocal amplitude.</li>
+    <li>Shimmer:DDA: Variation in vocal amplitude.</li>
+    <li>NHR: Ratio of noise to tonal components in the voice.</li>
+    <li>HNR: Ratio of tonal components to noise in the voice.</li>
+    <li>RPDE: Nonlinear dynamical complexity measure.</li>
+    <li>DFA: Signal fractal scaling exponent.</li>
+    <li>spread1: Nonlinear dynamical complexity measure.</li>
+    <li>spread2: Nonlinear dynamical complexity measure.</li>
+    <li>D2: Nonlinear dynamical complexity measure.</li>
+    <li>PPE: Nonlinear dynamical complexity measure.</li>
+    <li>status: Binary indicator of Parkinson's disease presence (1 for PD, 0 for healthy).</li>
+  </ol>
+
+  <h2>Target Variable:</h2>
+  <p>status: This binary variable indicates the presence or absence of Parkinson's disease. Individuals with Parkinson's disease are labeled as 1, while healthy individuals are labeled as 0.</p>
+
+  <h2>Feature Information:</h2>
+  <p>The dataset includes various numerical features that capture different aspects of vocal characteristics, such as fundamental frequency, jitter, shimmer, noise-to-harmonics ratio, and nonlinear dynamical complexity measures.</p>
+
+  <h2>Potential Use Cases:</h2>
+  <ul>
+    <li>Classification models to predict the presence or absence of Parkinson's disease based on the extracted features.</li>
+    <li>Regression models to predict clinical measures or severity of Parkinson's disease based on vocal characteristics.</li>
+    <li>Clustering techniques to explore patterns and subgroups within the dataset, potentially identifying distinct phenotypes or subtypes of Parkinson's disease.</li>
+  </ul>
+
+  <h2>Dataset Availability:</h2>
+  <p>The "parkinsons" dataset is publicly available and can be accessed from the UCI Machine Learning Repository.</p>
+
+  <h2>Citation:</h2>
+  <p>Sakar, B. E., Serbes, G., Sakar, C. O., Aydin, T., & Kursun, O. (2018). A comparative analysis of speech signal processing algorithms for Parkinson's disease classification and the use of the tunable Q-factor wavelet transform. Applied Soft Computing, 62, 750-761.</p>
+
+
+  

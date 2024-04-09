@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="description"
+      content="Empowering users with predictive insights, the Disease Prediction System utilizes medical data to forecast disease occurrences and aid in proactive healthcare management."
+    />
+
+    <!-- Always include this line of code!!! -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="icon" href="img/favicon.png" />
+    <link rel="apple-touch-icon" href="img/apple-touch-icon.png" />
+    <link rel="manifest" href="manifest.webmanifest" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/queries.css" />
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule=""
+      src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"
+    ></script>
+
+    <script
+      defer
+      src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"
+    ></script>
+    <script defer src="js/script.js"></script>
+
+    <title>MedPredict &mdash; Home</title>
+  </head>
+  <body>
+    <header class="header">
+      <a href="index.html">
+        <img class="logo" alt="MedPredict logo" src="img/Med-logoooo.png" />
+      </a>
+
+      <nav class="main-nav">
+        <ul class="main-nav-list">
+          <li><a class="main-nav-link" href="#home">Home</a></li>
+          <li><a class="main-nav-link" href="#how">How to predict</a></li>
+          <li><a class="main-nav-link" href="#diseases">Diseases we predict</a></li>
+          <li><a class="main-nav-link" href="#faqs">FQAs</a></li>
+          <li><a class="main-nav-link" href="#contact">Contact</a></li>
+            <a class="main-nav-link nav-cta" target="_blank" href="#cta"
+              >Predict now</a
+            >
+          </li>
+        </ul>
+      </nav>
+
+      <button class="btn-mobile-nav">
+        <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+        <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+      </button>
+    </header>
+    <main>
+      <section class="section-hero" id="home">
+        <div class="hero">
+          <div class="hero-text-box">
+            <h1 class="heading-primary">Diseases Prediction System</h1>
+            <p class="hero-description">
+              Your personalized health advisor, providing accurate disease
+              predictions based on input medical data, empowering proactive
+              health management.
+            </p>
+            <a href="#" class="btn btn--full margin-right-sm"
+              >Go to the system
+            </a>
+
+            <a href="doc.html" class="btn btn--outline" target="_blank" >Documentation</a>
+
+            <div class="diseases-box">
+              <div class="diseases-imgs">
+                <img src="img/diabetes.webp" alt="diabetes photo" />
+                <img src="img/heart.webp" alt="heart photo" />
+                <img src="img/parkinsons.webp" alt="parkinsons photo" />
+                <img src="img/blood.jpeg" alt="blood photo" />
+              </div>
+              <p class="diseases-text">
+                <span> Multiple</span> diseases prediction
+              </p>
+            </div>
+          </div>
+          <div class="hero-img-box">
+            <picture>
+              <img src="img/hero1.webp" class="hero-img" alt="A human body" />
+            </picture>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-how" id="how">
+        <div class="container">
+          <span class="subheading">How to predict</span>
+          <h2 class="heading-secondary">
+            Three Clicks to Health Insight:Input, Predict, Compare!
+          </h2>
+        </div>
+
+        <div class="container grid grid--2-cols grid--center-v">
+          <!-- STEP 01 -->
+          <div class="step-text-box">
+            <p class="step-number">01</p>
+            <h3 class="heading-tertiary">Select Disease</h3>
+            <p class="step-description">
+              Choose the disease you wish to predict from the sidebar menu.
+            </p>
+          </div>
+
+          <div class="step-img-box">
+            <img
+              src="img/1.png"
+              class="step-img"
+              alt="iPhone app
+            preferences selection screen"
+            />
+          </div>
+
+          <!-- STEP 02 -->
+          <div class="step-img-box">
+            <img
+              src="img/2.png"
+              class="step-img"
+              alt="iPhone app
+            meal approving plan screen"
+            />
+          </div>
+          <div class="step-text-box">
+            <p class="step-number">02</p>
+            <h3 class="heading-tertiary">Input Your Data:</h3>
+            <p class="step-description">
+              Enter your relevant medical data into the provided fields. If
+              unsure about any input, hover over the tooltip for additional
+              information. Remember, all inputs must be numeric.
+            </p>
+          </div>
+
+          <!-- STEP 03 -->
+          <div class="step-text-box">
+            <p class="step-number">03</p>
+            <h3 class="heading-tertiary">Get Prediction:</h3>
+            <p class="step-description">
+              Click on the "Predict" button to obtain your prediction. You'll
+              see the prediction result along with a comparison between your
+              input data and the normal range for each feature.
+            </p>
+          </div>
+          <div class="step-img-box">
+            <img
+              src="img/3.png"
+              class="step-img"
+              alt="iPhone app
+            delivery screen"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="services" id="diseases">
+        <div class="container">
+          <span class="subheading">Diseases we predict</span>
+          <h2 class="heading-secondary">
+            We provide prediction for the following Disease
+          </h2>
+        </div>
+
+        <div class="features">
+          <div class="feature">
+            <img src="img/diseases/heart-disease.png" alt="Icon 2" />
+            <h2>Heart Disease</h2>
+            <p>
+              Various conditions affecting the heart's structure and function,
+              causing cardiovascular complications.
+            </p>
+          </div>
+          <div class="feature">
+            <img src="img/diseases/diabetes.png" alt="Icon 3" />
+            <h2>Diabetes</h2>
+            <p>
+              A chronic condition resulting in high blood sugar levels due to
+              insulin deficiency or resistance.
+            </p>
+          </div>
+          <!-- New features -->
+          <div class="feature">
+            <img src="img/diseases/brain.png" alt="Icon 4" />
+            <h2>Parkinson's Disease</h2>
+            <p>
+              Progressive nervous system disorder affecting movement, causing
+              tremors and stiffness.
+            </p>
+          </div>
+          <div class="feature">
+            <img src="img/diseases/cancer.png" alt="Icon 5" />
+            <h2>Breast Cancer</h2>
+            <p>
+              Cancer that forms in the cells of the breasts, typically starting
+              in the milk ducts or lobules.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="section-FQAs" >
+        <div class="container">
+          <span class="subheading">FAQs</span>
+          <h2 class="heading-secondary">Find answers for the frequently asked questions</h2>
+        </div>
+
+        <div class="fqa-container">
+    
+      
+          <!-- Question 1 -->
+          <div class="faq">
+            <div class="questions">
+              <h3>What is machine learning (ML), and how does it relate to the Disease Prediction System?</h3>
+              <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24">
+                <path d="M7 10l5 5 5-5z" />
+              </svg>
+            </div>
+            <div class="answer">
+              <p>
+                Machine learning (ML) is a subset of artificial intelligence (AI) that enables computers to learn from data and make predictions or decisions without being explicitly programmed. In the context of the Disease Prediction System, ML algorithms are used to analyze medical data and learn patterns and relationships between input features (such as patient demographics and medical measurements) and the presence or absence of various diseases. By leveraging ML techniques, the system can generate accurate predictions based on user-input medical data.
+              </p>
+            </div>
+          </div>
+      
+          <!-- Question 2 -->
+          <div class="faq" id="faqs">
+            <div class="questions">
+              <h3>How does the Disease Prediction System utilize machine learning techniques to generate predictions for various diseases?</h3>
+              <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24">
+                <path d="M7 10l5 5 5-5z" />
+              </svg>
+            </div>
+            <div class="answer">
+              <p>
+                The Disease Prediction System utilizes machine learning techniques by training models on medical datasets containing information about patients' demographics, medical history, and diagnostic measurements. These datasets are preprocessed to clean and standardize the data, ensuring its suitability for ML algorithms. Various ML algorithms such as Logistic Regression, Support Vector Machine (SVM), and Gaussian Naive Bayes are trained on the preprocessed data to learn patterns and relationships between input features and disease outcomes. Once trained, these models can make predictions for new input data provided by users, enabling the system to predict the likelihood of various diseases based on user-input medical data.
+              </p>
+            </div>
+          </div>
+      
+          <!-- Question 3 -->
+          <div class="faq">
+            <div class="questions">
+              <h3>What are the key components of the Disease Prediction System's machine learning models?</h3>
+              <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24">
+                <path d="M7 10l5 5 5-5z" />
+              </svg>
+            </div>
+            <div class="answer">
+              <p>
+                The key components of the Disease Prediction System's machine learning models include:
+                <ul>
+                  <li>Input Features: These are the variables or attributes used as inputs to the models, such as patient demographics (age, sex) and medical measurements (blood pressure, glucose level).</li>
+                  <li>Training Data: This is the dataset used to train the machine learning models. It consists of labeled examples where each example contains input features and the corresponding disease outcome (e.g., presence or absence of a disease).</li>
+                  <li>Model Architecture: This refers to the structure and algorithms used in the machine learning models, such as Logistic Regression, Support Vector Machine, or Gaussian Naive Bayes.</li>
+                  <li>Parameters: These are the internal variables of the models that are optimized during the training process to minimize prediction errors.</li>
+                  <li>Predictions: Once trained, the models can generate predictions for new input data provided by users, indicating the likelihood of various diseases based on the input features.</li>
+                </ul>
+              </p>
+            </div>
+          </div>
+      
+          <!-- Question 4 -->
+          <div class="faq">
+            <div class="questions">
+              <h3>How are medical datasets prepared and processed before being used for training machine learning models?</h3>
+              <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24">
+                <path d="M7 10l5 5 5-5z" />
+              </svg>
+            </div>
+            <div class="answer">
+              <p>
+                Medical datasets undergo several preparation and preprocessing steps before being used for training machine learning models:
+                <ul>
+                  <li>Data Collection: Relevant medical datasets containing information about patients' demographics, medical history, and diagnostic measurements are collected from reliable sources.</li>
+                  <li>Data Cleaning: The datasets are cleaned to remove any inconsistencies, errors, or missing values that could affect the quality of the data.</li>
+                  <li>Data Standardization: The data is standardized to ensure uniformity across features. Continuous variables may be scaled to a common range to prevent biases during model training.</li>
+                  <li>Feature Engineering: New features may be derived from existing ones or selected based on domain knowledge to improve the predictive performance of the models.</li>
+                  <li>Data Splitting: The dataset is partitioned into training, validation, and test sets to evaluate the performance of the models and ensure their generalization to unseen data.</li>
+                  <li>Data Encoding: Categorical variables may be encoded into numerical values using techniques such as one-hot encoding or label encoding to make them suitable for machine learning algorithms.</li>
+                  <li>Data Augmentation (optional): Additional synthetic data points may be generated to augment the dataset, especially in cases where the dataset is small or imbalanced.</li>
+                </ul>
+              </p>
+            </div>
+          </div>
+      
+          <!-- Question 5 -->
+          <div class="faq">
+            <div class="questions">
+              <h3>What metrics are used to evaluate the performance of machine learning models in the Disease Prediction System?</h3>
+              <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24">
+                <path d="M7 10l5 5 5-5z" />
+              </svg>
+            </div>
+            <div class="answer">
+              <p>
+                The Disease Prediction System evaluates the performance of machine learning models using various metrics, including:
+                <ul>
+                  <li>Accuracy: The proportion of correctly predicted outcomes over the total number of predictions.</li>
+                  <li>Precision: The proportion of true positive predictions over all positive predictions, indicating the model's ability to avoid false positives.</li>
+                  <li>Recall (Sensitivity): The proportion of true positive predictions over all actual positive instances, indicating the model's ability to capture all positive instances.</li>
+                  <li>F1-Score: The harmonic mean of precision and recall, providing a balance between the two metrics.</li>
+                  <li>Confusion Matrix: A tabular representation of actual versus predicted outcomes, allowing for a detailed analysis of true positives, true negatives, false positives, and false negatives.</li>
+                </ul>
+              </p>
+            </div>
+          </div>
+      
+        </div>
+      </section>
+      <section class="contact-section" id="contact">
+        <div class="container">
+          <span class="subheading">Contact us </span>
+          <h2 class="heading-secondary">Have a question that wasn't answered? Feel free to ask it below!</h2>
+        </div>
+        <div class="fqa-container">
+
+
+    
+
+          <div class="form-container">
+            <form            
+              name="contact"
+              method="POST"
+              data-netlify="true"
+              onsubmit="submit"
+            >
+              <input type="text" placeholder="Your name" required>
+              <input type="email" placeholder="Your Email" required>
+              <textarea name="" id="" placeholder="your question" rows="8"></textarea>
+              <button type="submit" class="btn--submit">Send</button>
+             
+            </form>
+           </div>
+          
+
+        </div>
+      
+  
+      </section>
+    </main>
+
+
+
+    <footer class="footer">
+      <p id="copyright"></p>
+    </footer>
+
+    
+
+  </body>
+</html>
+
