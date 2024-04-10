@@ -1,5 +1,7 @@
 // Open the default tab on page load
-document.querySelector(".main-nav-link.active").click();
+document.addEventListener("DOMContentLoaded", function () {
+  document.getElementById("defaultOpen").click();
+});
 
 function openTab(evt, tabName) {
   var i, tabcontent, tablinks;
@@ -19,4 +21,7 @@ function openTab(evt, tabName) {
   // Show the selected tab content and set the tab link as active
   document.getElementById(tabName).style.display = "block";
   evt.currentTarget.classList.add("active");
+
+  // Scroll to the top of the page
+  window.scrollTo({ top: 0, behavior: "smooth" });
 }
