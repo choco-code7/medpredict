@@ -333,18 +333,13 @@
     
 
           <div class="form-container">
-            <form name="contact" netlify>
-
-
-<input type="text" placeholder="Your name" required>
-<input type="email" placeholder="Your Email" required>
-<textarea name="" id="" placeholder="your question" rows="8"></textarea>
-<button type="submit" class="btn--submit">Send</button>
-</form>
-
-
-           </div>
-          
+            <form name="contact" method="POST" data-netlify="true">
+                <input type="text" name="name" placeholder="Your name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your question" rows="8" required></textarea>
+                <button type="submit" class="btn--submit">Send</button>
+            </form>
+        </div>
 
         </div>
       
