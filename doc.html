@@ -108,7 +108,38 @@
                 assessment, contributing to improved healthcare outcomes.
               </p>
 
-              <h2 class="h-secondary">2. Features</h2>
+              <h2>2. The Workflow</h2>
+              <img src="img/workflow.png" alt="The work flow">
+<ol>
+  <li>
+    <strong class="margin-bottom  margin-top">Data Exploration and Pre-processing:</strong>
+    <p>This initial step involves understanding the data and preparing it for modeling. This may involve tasks like identifying missing values, exploring data distribution, and potentially feature scaling.</p>
+  </li>
+  <li>
+    <strong class="margin-bottom  margin-top">Training and Testing Set Split:</strong>
+    <p>The data is divided into two sets: a training set (typically 80% of the data) used to train the models and a testing set (20% of the data) used to evaluate their performance on unseen data.</p>
+  </li>
+  <li>
+    <strong class="margin-bottom  margin-top">Models Training:</strong>
+    <p>Here, each of the three models (Logistic Regression, SVM, and Gaussian Naive Bayes) is trained independently on the training set.</p>
+  </li>
+  <li>
+    <strong class="margin-bottom margin-top ">Models Evaluation:</strong>
+    <p>The performance of each trained model is assessed using various evaluation metrics on the testing set. The mentioned metrics in the image are Accuracy, Precision, Recall, and F1 Score.</p>
+    <ul>
+      <li><strong>Accuracy:</strong> Proportion of correct predictions across all classes.</li>
+      <li><strong>Precision:</strong> Out of the positive predictions, how many were truly positive.</li>
+      <li><strong>Recall:</strong> Out of the actual positive cases, how many were correctly identified.</li>
+      <li><strong>F1 Score:</strong> A harmonic mean between Precision and Recall.</li>
+    </ul>
+  </li>
+  <li>
+    <strong class="margin-bottom  margin-top">Exporting the Best Model:</strong>
+    <p>Based on the evaluation metrics on the testing set, the model that achieves the highest overall score is selected and exported for further use in the website.</p>
+  </li>
+</ol>
+
+              <h2 class="h-secondary">3. Features</h2>
               <ul>
                 <li>
                   <strong>Disease Prediction</strong>: Users can input their
@@ -139,7 +170,7 @@
                 </li>
               </ul>
 
-              <h2 class="h-secondary">3. Architecture</h2>
+              <h2 class="h-secondary">4. Architecture</h2>
               <p>
                 The Disease Prediction System follows a client-server
                 architecture, with the backend developed in Python and the
@@ -173,7 +204,7 @@
                 </li>
               </ul>
 
-              <h2 class="h-secondary">4. Usage</h2>
+              <h2 class="h-secondary">5. Usage</h2>
               <p>To use the Disease Prediction System:</p>
               <ol>
                 <li>Access the web application through the provided URL.</li>
@@ -195,7 +226,7 @@
                 </li>
               </ol>
 
-              <h2 class="h-secondary">5. Development Environment</h2>
+              <h2 class="h-secondary">6. Development Environment</h2>
               <p>
                 To develop and deploy the Disease Prediction System, the
                 following environment is recommended:
@@ -214,7 +245,7 @@
                 </li>
               </ul>
 
-              <h2 class="h-secondary">6. Future Enhancements</h2>
+              <h2 class="h-secondary">7. Future Enhancements</h2>
               <p>
                 Future enhancements for the Disease Prediction System may
                 include:
